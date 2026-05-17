@@ -50,7 +50,8 @@ pharmacovigilance-nlp/
 ├── docs/
 │   ├── Pharmacovigilance_Report.md
 │   ├── Pharmacovigilance_Report.docx
-│   └── Project_Proposal.pdf
+│   ├── Project_Proposal.pdf
+│   └── Final_Presentation.pptx
 ├── requirements.txt
 ├── LICENSE
 └── README.md
