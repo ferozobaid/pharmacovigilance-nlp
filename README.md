@@ -11,7 +11,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 Pharmacovigilance — monitoring drug effects after market release — depends on catching **Adverse Drug Events (ADEs)** from heterogeneous text: clinical notes, case reports, patient forums, social media. Manual review doesn't scale.
 
@@ -23,7 +23,7 @@ The result is a **triage layer** that prioritizes which reports human reviewers 
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 | Property | Value |
 |---|---|
@@ -34,7 +34,7 @@ The result is a **triage layer** that prioritizes which reports human reviewers 
 
 ---
 
-## 📈 Results
+##  Results
 
 The tuned **Random Forest + TF-IDF + NER-features** model:
 
@@ -47,7 +47,7 @@ The tuned **Random Forest + TF-IDF + NER-features** model:
 
 ---
 
-## 📊 Results in Pictures
+##  Results in Pictures
 
 ### Threshold-tuning dashboard
 The single image that drives the operating-point decision: Precision / Recall / F1 across thresholds, false-negatives vs threshold, and confusion matrices at both the high-recall (0.10) and near-default (0.50) settings.
@@ -79,7 +79,7 @@ Median ADE-corpus sentence is 17 words — informs the choice of TF-IDF max-feat
 
 ---
 
-## 🛠️ Methodology
+##  Methodology
 
 1. **EDA** — class balance, sentence length, lexical overlap between classes
 2. **Preprocessing** — lowercasing, POS-aware WordNet lemmatization, stopword removal
@@ -91,7 +91,7 @@ Median ADE-corpus sentence is 17 words — informs the choice of TF-IDF max-feat
 
 ---
 
-## 🧪 Tech Stack
+##  Tech Stack
 
 | Layer | Tools |
 |---|---|
@@ -104,7 +104,7 @@ Median ADE-corpus sentence is 17 words — informs the choice of TF-IDF max-feat
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 pharmacovigilance-nlp/
@@ -124,7 +124,7 @@ pharmacovigilance-nlp/
 
 ---
 
-## 🚀 Run It Locally
+##  Run It Locally
 
 ```bash
 git clone https://github.com/ferozobaid/pharmacovigilance-nlp.git
@@ -137,7 +137,7 @@ jupyter lab notebooks/pharmacovigilance.ipynb
 
 ---
 
-## 🔭 Future Improvements
+##  Future Improvements
 
 - **Transformer backbone** — fine-tune BioBERT / PubMedBERT and compare against the TF-IDF + NER baseline
 - **Span-level extraction** — predict the (drug, adverse-effect) tuple, not just sentence-level ADE / non-ADE
@@ -147,11 +147,11 @@ jupyter lab notebooks/pharmacovigilance.ipynb
 
 ---
 
-## 👤 Author
+##  Author
 
 **Feroz Obaid Khan** — Master of Management Analytics, McGill University · Group 1 project
 🔗 GitHub: [@ferozobaid](https://github.com/ferozobaid)
 
-## 📜 License
+##  License
 
 Code: MIT — see [LICENSE](LICENSE). Dataset: ADE Corpus v2, redistributed by SetFit on HuggingFace.
